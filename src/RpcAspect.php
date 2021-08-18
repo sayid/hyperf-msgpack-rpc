@@ -51,7 +51,8 @@ class RpcAspect implements AroundInterface
         $result = $proceedingJoinPoint->process();
         //根据协程栈 找到具体调用的rpc方法，检测返回值是否为对象，如果为的对象则进行准换
         $swooleTrace = \Swoole\Coroutine::getBackTrace(Coroutine::id(), DEBUG_BACKTRACE_IGNORE_ARGS, 15);
-        foreach ($swooleTrace as $row) {
+        for ($i = 1; $i < count($swooleTrace); $i++) {
+            $row = $swooleTrace[$i];
             $ref = new \ReflectionClass($row['class']);
             if ($ref->isSubclassOf(\Hyperf\RpcClient\Proxy\AbstractProxyService::class)) {
                 $method = $ref->getMethod($row['function']);
