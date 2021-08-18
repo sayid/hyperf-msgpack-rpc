@@ -1,0 +1,34 @@
+{
+  "name": "hyperf/rpc-convert",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "zyb",
+      "email": "449063862@qq.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.4",
+
+    "hyperf/json-rpc": "^2.2.0",
+    "hyperf/rpc": "^2.2.0",
+    "hyperf/rpc-client": "^2.2.0",
+    "hyperf/rpc-server": "^2.2.0",
+    "netresearch/jsonmapper": "^4.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Hyperf\\RpcConvert\\": "src"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "extra": {
+    "hyperf": {
+      "config": "Hyperf\\RpcConvert\\ConfigProvider"
+    }
+ }
+}
