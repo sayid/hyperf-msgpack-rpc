@@ -3,12 +3,6 @@ namespace Scjc\Lib;
 
 
 use Hyperf\Contract\NormalizerInterface;
-use Hyperf\Database\Query\Builder;
-use Hyperf\Utils\Arr;
-use Scjc\Lib\Common\CodeInterface;
-use Scjc\Lib\Common\HttpResponse;
-use Scjc\Lib\Constant\BaseCode;
-use Scjc\Lib\Interfaces\ResponseInterface;
 use Scjc\Lib\Listener\RegisterProtocolListener;
 
 class ConfigProvider
@@ -18,7 +12,7 @@ class ConfigProvider
         return [
             // 合并到  config/autoload/dependencies.php 文件
             'dependencies' => [
-                NormalizerInterface::class => SimpleNormalizer::class
+                //NormalizerInterface::class => SimpleNormalizer::class
             ],
             // 合并到  config/autoload/annotations.php 文件
             'annotations' => [
