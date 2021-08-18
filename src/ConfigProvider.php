@@ -4,7 +4,6 @@ namespace Scjc\Lib;
 
 use Hyperf\Contract\NormalizerInterface;
 use Hyperf\RpcConvert\RpcAspect;
-use Scjc\Lib\Listener\RegisterProtocolListener;
 
 class ConfigProvider
 {
