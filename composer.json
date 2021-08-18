@@ -20,10 +20,7 @@
   "autoload": {
     "psr-4": {
       "Hyperf\\RpcConvert\\": "src"
-    },
-    "files": [
-      "src/helpers.php"
-    ]
+    }
   },
   "extra": {
     "hyperf": {
