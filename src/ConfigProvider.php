@@ -1,5 +1,5 @@
 <?php
-namespace Scjc\Lib;
+namespace Hyperf\RpcConvert;
 
 
 use Hyperf\Contract\NormalizerInterface;
