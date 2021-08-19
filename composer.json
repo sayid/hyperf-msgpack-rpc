@@ -22,7 +22,7 @@
   },
   "extra": {
     "hyperf": {
-      "config": "Hyperf\\RpcConvert\\ConfigProvider"
+      "config": "Hyperf\\MsgPackRpc\\ConfigProvider"
     }
  }
 }
