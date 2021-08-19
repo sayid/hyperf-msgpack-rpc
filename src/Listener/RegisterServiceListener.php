@@ -44,7 +44,7 @@ class RegisterServiceListener implements ListenerInterface
     {
         $annotation = $event->annotation;
         if (! in_array($annotation->protocol,
-            ['jsonrpc', 'jsonrpc-http', 'jsonrpc-tcp-length-check', 'msgpackrpc', 'msgpackrpc-tcp-length-check'])) {
+            ['jsonrpc', 'jsonrpc-http', 'jsonrpc-tcp-length-check', 'msgpackrpc-tcp', 'msgpackrpc-tcp-length-check'])) {
             return;
         }
         $metadata = $event->toArray();

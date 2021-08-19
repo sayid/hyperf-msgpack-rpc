@@ -2,9 +2,8 @@
 namespace Hyperf\MsgPackRpc;
 
 
-use Hyperf\Contract\NormalizerInterface;
-use Hyperf\JsonRpc\Listener\RegisterProtocolListener;
-use Hyperf\JsonRpc\Listener\RegisterServiceListener;
+use Hyperf\MsgPackRpc\Listener\RegisterProtocolListener;
+use Hyperf\MsgPackRpc\Listener\RegisterServiceListener;
 use Hyperf\RpcConvert\RpcAspect;
 
 class ConfigProvider
