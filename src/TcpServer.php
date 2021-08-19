@@ -13,6 +13,7 @@ namespace Hyperf\MsgPackRpc;
 
 use Hyperf\Contract\StdoutLoggerInterface;
 use Hyperf\ExceptionHandler\ExceptionHandlerDispatcher;
+use Hyperf\JsonRpc\ResponseBuilder;
 use Hyperf\Rpc\Protocol;
 use Hyperf\Rpc\ProtocolManager;
 use Hyperf\RpcServer\RequestDispatcher;
