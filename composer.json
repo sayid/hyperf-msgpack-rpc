@@ -10,7 +10,6 @@
     }
   ],
   "require": {
-    "php": ">=7.4",
     "hyperf/json-rpc": "^2.2.0",
     "hyperf/rpc": "^2.2.0",
     "hyperf/rpc-client": "^2.2.0",
