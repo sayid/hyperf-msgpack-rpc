@@ -48,7 +48,7 @@ class RegisterProtocolListener implements ListenerInterface
      */
     public function process(object $event)
     {
-        $this->protocolManager->register('msgpackrpc-tcp', [
+        $this->protocolManager->register('msgpackrpc', [
             'packer' => MsgPacker::class,
             'transporter' => JsonRpcTransporter::class,
             'path-generator' => PathGenerator::class,

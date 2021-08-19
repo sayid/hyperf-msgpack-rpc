@@ -33,7 +33,7 @@ class TcpServer extends \Hyperf\JsonRpc\TcpServer
 
     protected function initProtocol()
     {
-        $protocol = 'msgpackrpc-tcp';
+        $protocol = 'msgpackrpc';
         if ($this->isLengthCheck()) {
             $protocol = 'msgpackrpc-tcp-length-check';
         }
