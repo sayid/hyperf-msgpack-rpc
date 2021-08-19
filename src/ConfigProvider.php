@@ -1,5 +1,5 @@
 <?php
-namespace Hyperf\RpcConvert;
+namespace Hyperf\MsgPackRpc;
 
 
 use Hyperf\Contract\NormalizerInterface;

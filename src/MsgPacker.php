@@ -1,7 +1,6 @@
 <?php
 
-
-namespace Scjc\Interfaces;
+namespace Hyperf\MsgPackRpc;
 
 
 use Hyperf\Contract\PackerInterface;
@@ -11,7 +10,7 @@ use Hyperf\Contract\PackerInterface;
  * Class RpcPacker
  * @package Scjc\Interfaces
  */
-class RpcPacker implements PackerInterface
+class MsgPacker implements PackerInterface
 {
     /**
      * @var string

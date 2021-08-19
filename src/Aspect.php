@@ -1,20 +1,20 @@
 <?php
 
 
-namespace Hyperf\RpcConvert;
+namespace Hyperf\MsgPackRpc;
 
 
 use Hyperf\Di\Aop\AroundInterface;
 use Hyperf\Di\Aop\ProceedingJoinPoint;
+use Hyperf\Rpc\ProtocolManager;
 use Hyperf\RpcClient\Client;
 use Hyperf\Utils\Coroutine;
 use Hyperf\Utils\Serializer\SimpleNormalizer;
 
-class RpcAspect implements AroundInterface
+class Aspect implements AroundInterface
 {
     public $classes = [
-        SimpleNormalizer::class . '::denormalize', //服务器端接收到数据后参数转化
-        Client::class . '::send',
+        ProtocolManager::class . '::getPacker', //服务器端接收到数据后参数转化
     ];
 
     public function process(ProceedingJoinPoint $proceedingJoinPoint)
