@@ -1,5 +1,5 @@
 # hyperf-rpc-convert
-rpc支持传递对象
+适配高性能的msgpack扩展，以替换json序列化
 
 ### 注意
-传递的参数及返回的对象，必须能够直接转换成json数组
+依赖msgpack扩展
