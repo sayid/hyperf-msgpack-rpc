@@ -14,7 +14,7 @@ use Hyperf\Utils\Serializer\SimpleNormalizer;
 class Aspect implements AroundInterface
 {
     public $classes = [
-        ProtocolManager::class . '::getPacker', //服务器端接收到数据后参数转化
+        //ProtocolManager::class . '::getPacker', //服务器端接收到数据后参数转化
     ];
 
     public function process(ProceedingJoinPoint $proceedingJoinPoint)
