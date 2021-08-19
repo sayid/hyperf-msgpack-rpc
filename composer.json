@@ -1,5 +1,5 @@
 {
-  "name": "hyperfc/rpc-convert",
+  "name": "hyperfc/msgpack-rpc",
   "description": "description",
   "minimum-stability": "stable",
   "license": "proprietary",
@@ -15,11 +15,10 @@
     "hyperf/rpc": "^2.2.0",
     "hyperf/rpc-client": "^2.2.0",
     "hyperf/rpc-server": "^2.2.0",
-    "netresearch/jsonmapper": "^4.0.0"
   },
   "autoload": {
     "psr-4": {
-      "Hyperf\\RpcConvert\\": "src"
+      "Hyperf\\MsgPackRpc\\": "src"
     }
   },
   "extra": {
